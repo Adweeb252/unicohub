@@ -13,7 +13,7 @@ const ContactUs = () => {
             name="contact"
             id="contact"
             placeholder="Enter your work email"
-            className="focus:outline-none mt-7 text-white bg-white bg-opacity-10 py-3 px-6 rounded-full placeholder:font-semibold placeholder:text-gray-300 w-11/12 lg:w-4/5"
+            className="focus:outline-none mt-7 text-white bg-white bg-opacity-10 py-3 px-7 rounded-full placeholder:font-semibold placeholder:text-gray-300 w-11/12 lg:w-4/5"
           />
           <button
             type="button"
