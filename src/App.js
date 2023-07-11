@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './pages/home';
+import Users from './pages/Usersdata';
+import { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from "react-redux";
+import {
+  usersDataAsync,
+  getUser,
+  selectUsersInfo,
+} from "./users/userSlice";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(usersDataAsync());
+  }, []);
+  const users = useSelector(selectUsersInfo);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element= {<Home />}></Route>
+        {users && <Route path="/users" element= {<Users />}></Route>}
+      </Routes>
+    </Router>
   );
 }
 
