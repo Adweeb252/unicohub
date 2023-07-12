@@ -37,3 +37,12 @@ body{
 .get-started:hover{
     background: linear-gradient(to left, #00f0ff 1%, #5200ff 55%, #ff2df7 100%);
 }
+
+.glassmorphism {
+  background: linear-gradient(
+    97deg,
+    rgba(220, 0, 255, 0.8) 0%,
+    rgba(0, 0, 207, 0.8) 53%,
+    rgba(0, 255, 254, 0.8) 100%
+  );
+}
