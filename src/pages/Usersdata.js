@@ -25,8 +25,8 @@ const Users = () =>
     return (
         <>
         <Navbar/>
-        <div className="md:w-4/5 w-11/12 mx-auto my-6 md:my-16">
-        <div className="w-full py-5 mx-auto"> 
+        <div className="md:w-4/5 w-11/12 mx-auto my-2 md:my-10">
+        <div className="w-full py-2 mx-auto"> 
         <h1 className="flex justify-center text-white text-6xl my-4">Users Data</h1>
         <div className="flex flex-wrap justify-center w-full gap-8">      
         {users &&
@@ -34,8 +34,8 @@ const Users = () =>
                 // const {id, name, email} = curUser;
                 console.log(user);
                 return (
-                    <div className="p-4 lg:w-1/4 md:w-1/2 ai-gradient bg-slate-800 rounded-lg max-w-xs scale-in-center" key={user.id}>
-                  <div className="h-full flex flex-col items-center text-center">
+                    <div className="p-4 lg:w-1/4 md:w-1/2 bg-slate-800 rounded-lg max-w-xs scale-in-center" key={user.id}>
+                  <div className="h-full flex flex-col ai-gradient items-center text-center">
                     <img
                       alt="team"
                       className="flex-shrink-0 bg-white bg-opacity-10 rounded-lg w-full h-56 object-cover object-center mb-4"
