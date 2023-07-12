@@ -3,7 +3,7 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Product', href: '/', current: true },
+  { name: 'Product', href: '/', current: false },
   { name: 'Team', href: '/', current: false },
   { name: 'Enterprise', href: '/', current: false },
   { name: 'Explore', href: '/', current: false },
@@ -16,7 +16,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function Navbar() {
   return (
     <Disclosure as="nav">
       {({ open }) => (

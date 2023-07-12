@@ -1,4 +1,4 @@
-import Example from '../components/navbar';
+import Navbar from '../components/navbar';
 import Header from '../components/Header';
 import Logos from '../components/logos';
 import ContentRight from '../components/contentRight';
@@ -10,7 +10,7 @@ import Footer from '../components/footer';
 const Home = ()=> {
   return (
     <>
-      <Example/>
+      <Navbar/>
       <Header />
       <Logos />
       <ContentRight imgUrl={'cube-right.png'} altTxt={'cube-right.png'} />

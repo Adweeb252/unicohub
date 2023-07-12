@@ -1,6 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 const Users = () =>
 {
@@ -22,6 +24,7 @@ const Users = () =>
     
     return (
         <>
+        <Navbar/>
         <div className="md:w-4/5 w-11/12 mx-auto my-6 md:my-16">
         <div className="w-full py-5 mx-auto"> 
         <h1 className="flex justify-center text-white text-6xl my-4">Users Data</h1>
@@ -98,6 +101,8 @@ const Users = () =>
         </div>
         </div>
         </div>
+
+        <Footer/>
         </>
 
     )
